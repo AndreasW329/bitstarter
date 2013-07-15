@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   //response.send('Hello Everyone!');
   var buf = fs.readFileSync('index.html');
-  var msg = buffer.toString('utf-8');
+  var msg = buf.toString('utf-8');
   response.send(msg);
 });
 
